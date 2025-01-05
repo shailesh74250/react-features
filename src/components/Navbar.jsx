@@ -1,9 +1,6 @@
 import './Navbar.css';
-import { useTheme } from "../ThemeProvider"
 
 function Navbar() {
-
-    const {toggleTheme} = useTheme()
 
     return (
       <div className='navbar'>
@@ -13,7 +10,6 @@ function Navbar() {
           <li><a href='/about-us'>Contact</a></li>
           <li><a href='/products'>Products</a></li>
         </ul>
-        <button onClick={toggleTheme}>Toggle Theme</button>
       </div>
     )
   }
