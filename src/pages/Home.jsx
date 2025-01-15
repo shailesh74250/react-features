@@ -2,23 +2,9 @@ function Home() {
     
     return (
       <div>
-        <h1>Home</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quia repellendus repellat nemo a vitae unde perspiciatis dolore quisquam, enim autem facilis perferendis necessitatibus incidunt? Accusamus molestias ipsum voluptatum.</p>
+        <h1>For Error Boundary</h1>
+        <p>
+          Visit: <a href='https://github.com/shailesh74250/shailesh-portfolio/blob/main/src/main.tsx' target="_blank">Error Boundary</a></p>
       </div>
     )
   }
