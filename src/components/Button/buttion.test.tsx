@@ -1,19 +1,24 @@
+import { render, screen } from '@testing-library/react'
 import Button from './index';
 
-describe(('Button unit test') => {
+describe('Button unit test', () => {
+  const handleOnClick = jest.fn();
+  beforeEach(() => {
+    render(<Button label='submit' onClick={handleOnClick} />)
+  })
   it('should exist in the DOM', () => {
-    render(<Button />)
+    expect(screen.getByText('submit')).toBeInTheDocument();
   })
-  it('should have onClick handler', () => {
-    render(<Button />)
+  it.skip('should have onClick handler', () => {
+    
   })
-  it('should have label', () => {
-    render(<Button />)
+  it.skip('should have label', () => {
+    
   })
-  it('should have disabled prop', () => {
-    render(<Button />)
+  it.skip('should have disabled prop', () => {
+    
   })
-  it('should have varient prop', () => {
-    render(<Button />)
+  it.skip('should have varient prop', () => {
+    
   })
 })

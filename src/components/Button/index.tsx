@@ -1,11 +1,9 @@
 import { ButtonProps } from "./type";
 
 const Button: React.FC<ButtonProps> = ({
-  variant = "primary",
   label, 
   onClick, 
   disabled,
-  ...rest
 }) => {
   return (
     <button
