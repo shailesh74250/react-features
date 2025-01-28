@@ -1,4 +1,5 @@
 export default {
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   preset: 'ts-jest',
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
@@ -7,7 +8,6 @@ export default {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 };
   
     
