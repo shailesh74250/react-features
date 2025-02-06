@@ -54,7 +54,6 @@ export default tseslint.config({
 - Icon Bar
 - Menu Icon
 - Accordion
-- Tabs
 - Vertical Tabs
 - Table
 - Infinite Scroll
