@@ -27,6 +27,6 @@ li {
     border-radius: 10px;
 }
 
-a {
+ul li a {
     color: #fff;
 }
