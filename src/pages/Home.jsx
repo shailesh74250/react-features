@@ -1,9 +1,9 @@
-import AccessFormElements from '../components/AccessFormElements'
+import ReactHookForm from '../components/ReactHookForm'
 
 function Home() {
     
     return (
-      <AccessFormElements />
+      <ReactHookForm />
     )
   }
   
