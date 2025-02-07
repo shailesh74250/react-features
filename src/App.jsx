@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar';

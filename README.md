@@ -66,23 +66,98 @@
         - Integrate New Relic or Grafana for real-time insights.
 
 ## Boilerplate React Setup Optimized for performance, scalability, efficiency and security
-✅ Code Splitting & Lazy Loading using React.lazy()
-✅ React Query for efficient data fetching & caching
-✅ Recoil for state management
-✅ Error Boundaries for better error handling
-✅ Web Vitals & Service Workers for monitoring & PWA support
-✅ Strict Mode for better debugging
-✅ Optimized React Query settings to reduce unnecessary refetching
-✅ Passive Event Listeners for improved touch performance
-✅ React Query SSR hydration support for better state management
-✅ Retry mechanism for failed API calls
-✅ Memoized event handler to reduce re-renders
-✅ Disabled console logs in production for better performance
-✅ Deferred non-urgent tasks using requestIdleCallback
-✅ Preloading important resources for faster initial loads
-✅ Batching DOM updates using requestAnimationFrame to reduce layout
-✅ Optimized event listeners using passive options
-✅ Deferred offscreen rendering with Intersection Observer
-✅ Minimized reflows by batching multiple DOM changes
+- ✅ Code Splitting & Lazy Loading using React.lazy()
+- ✅ React Query for efficient data fetching & caching
+- ✅ Recoil or Redux or Context API for state management
+- ✅ Error Boundaries for better error handling
+- ✅ Web Vitals & Service Workers for monitoring & PWA support
+- ✅ Strict Mode for better debugging
+- ✅ Optimized React Query settings to reduce unnecessary refetching
+- ✅ Passive Event Listeners for improved touch performance
+- ✅ React Query SSR hydration support for better state management
+- ✅ Retry mechanism for failed API calls
+- ✅ Memoized event handler to reduce re-renders
+- ✅ Disabled console logs in production for better performance
+- ✅ Deferred non-urgent tasks using requestIdleCallback
+- ✅ Preloading important resources for faster initial loads
+- ✅ Batching DOM updates using requestAnimationFrame to reduce layout
+- ✅ Optimized event listeners using passive options
+- ✅ Deferred offscreen rendering with Intersection Observer
+- ✅ Minimized reflows by batching multiple DOM changes
+- ✅ Convert PNG/JPG to WebP for smaller size
+- ✅ Use SVGO to compress SVG files
+- ✅ Lazy-load images with loading="lazy"
+- ✔ Use React.lazy() & Suspense for code splitting
+- ✔ Dynamically import routes (react-router-dom)
+- ✔ Remove unused dependencies (depcheck)
+- ✔ Replace heavy libraries with lightweight alternatives
+- ✔ Enable tree-shaking
+- ✔ Analyze and optimize Webpack bundle
+- ✅ Enable minification for production
+    - For Webpack: Enable TerserPlugin
+    - For Vite: Set build.minify: 'terser'
+        
+        import TerserPlugin from 'terser-webpack-plugin';
+        module.exports = {
+        optimization: {
+            minimize: true,
+            minimizer: [new TerserPlugin()],
+        },
+        };
+- Use Webpack Bundle Analyzer
+    - ✅ Find out what’s making your bundle large
+
+- Tree Shaking (Eliminate Dead Code)
+    - ✅ Remove unused exports automatically
+    - Enable Production model on 
+    - Ensure Webpack is tree-shaking by using ESM imports (import instead of require)
+
+- Remove Unused Dependencies (depcheck)
+    - ✅ Identify and remove unused packages
+    - Command: npx depcheck
+    - Command: npm uninstall unused-package
+    - Reduces node_modules bloat
+    - Shrinks bundle size
+
+- Optimize Third-Party Libraries
+    - import debounce from 'lodash/debounce'; // ✅ Good
+    - import _ from 'lodash'; // ❌ Bad (imports everything)
+
+- Use Code Splitting with React.lazy() & Suspense
+    - ✅ Split large components into separate chunks
+    - ✅ Only load them when needed
+
+            import React, { lazy, Suspense } from 'react';
+            const HeavyComponent = lazy(() => import('./HeavyComponent'));
+            const App = () => (
+            <Suspense fallback={<div>Loading...</div>}>
+                <HeavyComponent />
+            </Suspense>
+            );
+
+            export default App;
+
+- Dynamic Imports for Routes (react-router-dom)
+    - ✅ Prevents loading all routes upfront
+    - ✅ Improves time-to-interactive
+
+            import { lazy, Suspense } from 'react';
+            import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+            const Home = lazy(() => import('./pages/Home'));
+            const Dashboard = lazy(() => import('./pages/Dashboard'));
+
+            const App = () => (
+            <Router>
+                <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
+                </Routes>
+                </Suspense>
+            </Router>
+            );
+
+            export default App;
+
 
 # Optimize Next Application

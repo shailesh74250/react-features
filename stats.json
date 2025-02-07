@@ -1,0 +1,16 @@
+Need to install the following packages:
+webpack@5.97.1
+Ok to proceed? (y) 
+Installing 'webpack-cli' (running 'npm install -D webpack-cli')...
+
+added 89 packages, and audited 398 packages in 13s
+
+124 packages are looking for funding
+  run `npm fund` for details
+
+1 moderate severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
