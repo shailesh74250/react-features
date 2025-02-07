@@ -20,6 +20,12 @@ const schema = yup.object().shape({
   }),
 });
 
+/*
+✅ Ensures a file is required
+✅ Validates file type (JPEG, PNG, PDF, etc.)
+✅ Restricts file size (5MB limit)
+*/
+
 function ReactHookForm() {
   const { register, handleSubmit, watch, formState: { errors }  } = useForm({
     resolver: yupResolver(schema),

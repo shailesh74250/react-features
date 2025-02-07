@@ -1,3 +1,5 @@
+// Controlled component
+
 import React, { useState } from "react";
 
 function AccessFormElements() {
@@ -11,6 +13,7 @@ function AccessFormElements() {
     message: "",
     country: "India",
   });
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, type, value, checked } = e.target;
@@ -37,6 +40,14 @@ function AccessFormElements() {
     console.log("Form Submitted with Values:", formValues);
   };
 
+  const validateEmail = () => {
+    if (!email.includes('@')) {
+      setError('Invalid email address');
+    } else {
+      setError('');
+    }
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <div>
@@ -55,7 +66,9 @@ function AccessFormElements() {
           name="email"
           value={formValues.email}
           onChange={handleChange}
+          onBlur={validateEmail} 
         />
+         {error && <p style={{ color: 'red' }}>{error}</p>}
       </div>
       <div>
         <label>Password:</label>
