@@ -12,9 +12,11 @@
     "tsc": "tsc"
   },
   "dependencies": {
+    "lucide-react": "^0.475.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.1"
+    "react-router-dom": "^7.1.1",
+    "sass-embedded": "^1.85.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
