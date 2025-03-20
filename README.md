@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Custom Hooks
+- A Custom Hook in React is a JavaScript function that encapsulates reusable logic using React Hooks (useState, useEffect, useRef, etc.). It allows you to share stateful logic between components without repeating code.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Why Use Custom Hooks?
+- ✅ Reusability – Extract and reuse logic across multiple components.
+- ✅ Separation of Concerns – Keep components clean by moving logic to hooks.
+- ✅ Improved Readability – Encapsulate complex logic in a single function.
+- ✅ Avoid Code Duplication – Share behavior across components easily.
 
-Currently, two official plugins are available:
+## Key Rules for Custom Hooks
+- Always start the function name with use -> useFetch, useAuth, etc.
+- Can use other hooks inside (useState, useEffect, useContext, etc)
+- Follows React's Hooks Rules (cannot be called inside loops, conditions, or nested functions)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## When Should You Use Custom Hooks?
+- When you repeat the same logic across multiple components.
+- When a component is becoming tool large due to logic.
+- When you need to abstract API calls, form handling, authentication, etc.
 
-## Expanding the ESLint configuration
+## Naming Convention for Custom Hooks in React
+- File Name: It is recommended (but not mandatory) to start the filename with use to indicate it’s a hook.
+- Extension:
+  - Use .ts if it's a TypeScript function without JSX.
+  - Use .tsx if the hook returns JSX or interacts with React components.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Arrow function vs Normal function
+- Use normal functions (function useXYZ() {}) for defining hooks.
+- Use arrow functions (const fn = () => {}) only for helper functions inside the hook.
