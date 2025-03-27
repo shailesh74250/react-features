@@ -1,6 +1,18 @@
 # React Design Patterns
 - Reference: https://refine.dev/blog/react-design-patterns/#introduction
 
+## Provider Pattern
+- Want to pass value to across entire react application then use Provider pattern
+- For example: Theme dark and light, Auth data, Helmet Provider for provide title and meta data to each pages 
+- Provider pattern we can get by Context provider API, Redux API, with the help of Custom Hook
+- Export context provider wrapped with Custom hook so that we can encapsulate provider logic from other components
+  
+## Layout Pattern
+- A single application can contain multiple layouts, and each one has a different style or design
+- Layout component import using Route as parent and inside that Route we can import pages Route
+- Only the main content is going to be provided by children's pages or components; the rest of the page's skeleton will be provided by Layout.
+- In any specific page we don't want layout styling Then import that particular page outside of the layout parent route. For example: Not found page, signing, signpu pages.
+
 ## Presentational & Container Pattern 
    - Presentational Components: Focus on rendering UI, receiving data - via props, and avoiding business logic.
    - Container Components: Handle state, API calls, and business logic, then pass data to presentational components.
